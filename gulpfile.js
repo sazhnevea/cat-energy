@@ -7,6 +7,7 @@ var plumber = require('gulp-plumber');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var server = require('browser-sync').create();
+var postcss = require('gulp-postcss');
 
 gulp.task('serve', function() {
     server.init({
@@ -16,14 +17,14 @@ gulp.task('serve', function() {
     });
 });
 
-gulp.task('pug', function() {
-  return gulp.src('source/pug/pages/*.pug')
-    .pipe(pug({
-      pretty: true
-    }))
-    .pipe(gulp.dest('build'))
-    .on('end', server.reload);
-})
+// gulp.task('pug', function() {
+//   return gulp.src('source/pug/pages/*.pug')
+//     .pipe(pug({
+//       pretty: true
+//     }))
+//     .pipe(gulp.dest('build'))
+//     .on('end', server.reload);
+// })
 
 gulp.task('less', function() {
   return gulp.src('less/style.less')
@@ -37,12 +38,12 @@ gulp.task('less', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('**/*.less', gulp.series('less'));
-  gulp.watch('source/pug/**/*.pug', gulp.series('pug'));
+  gulp.watch('less/**/*.less', gulp.series('less'));
+  gulp.watch('build/*.html').on('change', server.reload);
 
 })
 
 gulp.task('default', gulp.series(
-  gulp.parallel('pug', 'less'),
+  gulp.parallel('less'),
   gulp.parallel('watch', 'serve'),
   ));
