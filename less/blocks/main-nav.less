@@ -1,0 +1,28 @@
+.main-nav {
+   width: @mobile-container;
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+.main-nav__list {
+  .reset-list();
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+   width: auto;
+   margin: 0;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+   width: auto;
+   margin: 0 0 0 auto;
+  }
+}

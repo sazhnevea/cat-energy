@@ -1,0 +1,32 @@
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: @mobile-container;
+  margin: 0 auto;
+  height: 65px;
+}
+
+.page-header__title {
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    height: 105px;
+    width: @tablet-container;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    height: 130px;
+    width: @desktop-container;
+    justify-content: normal;
+  }
+}

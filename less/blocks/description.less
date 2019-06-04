@@ -1,0 +1,29 @@
+.description {
+  height: 480px;
+}
+
+.description__wrapper {
+  margin: 0 auto;
+  width: @mobile-container;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .description {
+    height: 845px;
+  }
+  .description__wrapper {
+    width: @tablet-container;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description {
+    height: 650px;
+  }
+  .description__wrapper {
+    width: @desktop-container;
+  }
+}
+

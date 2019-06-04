@@ -39,6 +39,7 @@ gulp.task('less', function() {
 
 gulp.task('watch', function() {
   gulp.watch('less/**/*.less', gulp.series('less'));
+  gulp.watch('less/*.less', gulp.series('less'));
   gulp.watch('build/*.html').on('change', server.reload);
 
 })
