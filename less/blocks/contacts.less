@@ -1,0 +1,33 @@
+.contacts {
+  height: 110px;
+  margin: 0 auto;
+  width: @mobile-container;
+  display: flex;
+}
+
+.contacts__title,
+.contact__address {
+  width: 140px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    width: @tablet-container;
+    height: 190px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+   .contacts {
+   left: 110px;
+    width: 570px;
+    height: 200px;
+    justify-content: space-between;
+    display: flex;
+    position: absolute;
+    content: '';
+    margin-top: 70px;
+  }
+}
+
