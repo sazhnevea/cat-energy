@@ -1,0 +1,42 @@
+.live-sample {
+  height: 700px;
+}
+
+.live-sample__wrapper {
+  margin: 0 auto;
+  width: @mobile-width;
+}
+
+@media (min-width: @tablet-width) {
+  .live-sample {
+    height: 1080px;
+  }
+  .live-sample__wrapper {
+    width: @tablet-container;
+  }
+  .live-sample__facts,
+  .live-sample__costs {
+    display: inline-flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+   .live-sample {
+    height: 655px;
+  }
+  .live-sample__wrapper {
+    width: @desktop-container;
+  }
+  .live-sample__facts,
+  .live-sample__costs {
+    display: block;
+  }
+  .live-sample__description,
+  .live-sample__costs {
+    width: 470px;
+  }
+  .live-sample__costs {
+    display: inline-block;
+  }
+}
+

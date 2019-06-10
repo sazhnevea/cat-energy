@@ -1,0 +1,29 @@
+.map {
+  display: block;
+  height: 360px;
+  margin: 0 auto;
+  width: @mobile-width;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    height: 400px;
+    width: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+   .steps {
+    height: 455px;
+  }
+  .steps__wrapper {
+    width: @desktop-container;
+  }
+  .steps__list {
+    justify-content: space-between;
+  }
+  .steps__item {
+    width: 305px;
+    flex-direction: column;
+  }
+}
