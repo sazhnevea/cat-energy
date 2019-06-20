@@ -1,29 +1,26 @@
 .map {
-  display: block;
-  height: 360px;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  height: 360px;
   width: @mobile-width;
+margin-bottom: 36px;
+}
+
+.map__yandex {
+  border: 0;
 }
 
 @media (min-width: @tablet-width) {
   .map {
-    height: 400px;
-    width: auto;
+    margin-bottom: 0;
+    width: 768px;
+    height: 395px;
   }
 }
 
 @media (min-width: @desktop-width) {
-   .steps {
-    height: 455px;
-  }
-  .steps__wrapper {
-    width: @desktop-container;
-  }
-  .steps__list {
-    justify-content: space-between;
-  }
-  .steps__item {
-    width: 305px;
-    flex-direction: column;
+  .map {
+    width: 1440px;
   }
 }
