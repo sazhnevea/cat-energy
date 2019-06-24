@@ -9,6 +9,8 @@ var sourcemaps = require('gulp-sourcemaps');
 var server = require('browser-sync').create();
 var postcss = require('gulp-postcss');
 var concat = require('gulp-concat');
+var svgmin = require('gulp-svgmin');
+var cwebp = require('gulp-cwebp');
 
 gulp.task('serve', function() {
     server.init({
@@ -46,3 +48,19 @@ gulp.task('default', gulp.series(
   gulp.parallel('less', 'js'),
   gulp.parallel('watch', 'serve'),
   ));
+
+
+
+gulp.task('svgo', function () {
+    return gulp.src('test/1/test.svg')
+        .pipe(svgmin())
+        .pipe(gulp.dest('test/out'));
+});
+
+
+ 
+gulp.task('cwebp', function () {
+    return gulp.src('test/1/test.jpg')
+    .pipe(cwebp())
+    .pipe(gulp.dest('test/out'));
+});

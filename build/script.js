@@ -21,7 +21,4 @@ var slider = document.querySelector(`.slider__toggle--range`);
 
 function moveDivisor () {
   slim.style.width = slider.value + `00` +`%`;
-  // fat.style.width = 100 - slider.value+`%`;
-
 }
-// console.log(divisor);
