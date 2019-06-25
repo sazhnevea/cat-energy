@@ -1,0 +1,241 @@
+.advantages__wrapper {
+  margin: 0 auto;
+  width: @mobile-container;
+}
+
+.advantages__list {
+  .reset-list();
+}
+
+.advantages__title,
+.advantages__description {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__title {
+  text-transform: uppercase;
+  color: #111111;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.02px;
+  margin-left: 18px;
+}
+
+.advantages__description {
+  color: #444444;
+  font-family: "Arial MT", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 21px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #dadada;
+  margin-bottom: 19px;
+}
+
+.advantages__item {
+  background-color: #f2f2f2;
+  padding: 22px 21px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.advantages__button {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 33px;
+    height: 11px;
+    background: url('../img/right-arrow-long.svg') no-repeat #f2f2f2;
+    top: 3px;
+    left: 96px;
+  }
+
+  &:active {
+   opacity: 0.3;
+ }
+}
+
+.advantages__image--slim {
+  width: 50px;
+}
+
+.advantages__item--get-muscle {
+  padding: 24px 21px;
+}
+
+.advantages__item--muscle {
+  padding: 24px 20px;
+}
+
+.advantages__image--muscle {
+  width: 67px;
+  margin-left: -7px;
+}
+
+.advantages__title--muscle {
+  margin-left: 11px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    height: 775px;
+    margin-bottom: 44px;
+  }
+  .advantages__wrapper {
+    width: @tablet-container;
+  }
+
+  .advantages__item {
+    padding: 34px 53px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .advantages__title {
+    width: 100%;
+    order: 1;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 37.02px;
+    padding-top: 42px;
+    padding-bottom: 0px;
+    margin-bottom: 25px;
+  }
+
+  .advantages__description {
+    order: 2;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    padding-right: 215px;
+    border-bottom: none;
+    margin-bottom: 35px;
+  }
+
+  .advantages__image {
+    order: 3;
+    position: absolute;
+    top: 82px;
+    right: 62px;
+    width: 200px;
+  }
+
+  .advantages__button {
+    order: 4;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 28px;
+
+    &::after {
+      top: 4px;
+      left: 131px;
+    }
+  }
+  .advantages__image--muscle {
+    width: 269px;
+    top: 91px;
+    right: 28px;
+  }
+
+  .advantages__item--get-muscle .advantages__description {
+    width: 335px;
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    height: auto;
+    margin-bottom: 71px;
+  }
+  .advantages__wrapper {
+    width: @desktop-container;
+    margin: 0 auto;
+  }
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .advantages__item {
+    padding: 20px 52px;
+    padding: 20px 52px 0 52px;
+    padding-top: 42px;
+    position: relative;
+    margin-bottom: 30px;
+    width: 570px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+
+  .advantages__image {
+    position: absolute;
+    top: 42px;
+    left: 52px;
+    width: 100px;
+  }
+
+  .advantages__title {
+    width: 100%;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 37.02px;
+    padding-top: 27px;
+    padding-left: 162px;
+    margin-bottom: 25px;
+    margin: auto 0;
+    margin-top: 6px;
+  }
+
+  .advantages__description {
+    order: 2;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    width: 100%;
+    margin-top: 73px;
+    margin: 0;
+    padding: 0;
+    margin-top: 75px;
+    margin-bottom: 29px;
+  }
+
+  .advantages__button {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-bottom: 62px;
+  }
+
+  .advantages__image--muscle {
+    top: 47px;
+    left: 41px;
+    width: 134px;
+  }
+
+  .advantages__item--get-muscle .advantages__description {
+    width: auto;
+    margin-bottom: 33px;
+   }
+}
+

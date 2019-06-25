@@ -1,0 +1,156 @@
+.description {
+  margin-bottom: 22px;
+}
+
+.description__wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: @mobile-width;
+  display: flex;
+  flex-direction: column;
+  background: url('../img/index-background-mobile.webp') no-repeat #fff;
+}
+
+.description__background {
+  display: none;
+}
+
+.description__title {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 27px;
+  line-height: 36px;
+  margin-bottom: 26px;
+}
+
+.description__slogan {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.description__image {
+  width: 280px;
+  height: 270px;
+  margin: 0 auto 3px auto;
+}
+
+.description__button {
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  font-family: Oswald;
+  text-transform: uppercase;
+  border: none;
+  width: 280px;
+  height: 40px;
+  background-color: #68b738;
+  &:hover {
+    background-color: #5eaa2f;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .description {
+    margin-bottom: -3px;
+  }
+
+  .description__wrapper {
+    width: @tablet-container;
+    background: transparent;
+  }
+
+  .description__title {
+    color: #111111;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    margin: 0;
+    text-align: left;
+    padding-left: 87px;
+    padding-top: 42px;
+    margin-bottom: 42px;
+   }
+
+  .description__slogan {
+    color: #111111;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+    text-align: left;
+    padding-left: 87px;
+    margin-bottom: 19px;
+    }
+
+
+  .description__button {
+    position: absolute;
+    left: 89px;
+    top: 271px;
+    width: 245px;
+    height: 52px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .description__image {
+    display: block;
+    box-sizing: border-box;
+    background: url('../img/index-can-tablet.webp') no-repeat;
+    width: 706px;
+    height: 609px;
+    padding-left: 706px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description {
+    margin-bottom: 353px;
+  }
+
+  .description__wrapper {
+    width: @desktop-container;
+  }
+
+  .description__title,
+  .description__slogan {
+    padding-left: 80px;
+  }
+  
+  .description__button {
+    left: 80px;
+    top: 276px;
+  }
+
+  .description__image {
+    position: absolute;
+    top: -38px;
+    right: -488px;
+    background: url(../img/index-can.webp) no-repeat;
+    width: 552px;
+    height: 499px;
+    padding-right: 552px;
+  }
+
+  .description__background {
+    display: block;
+    position: absolute;
+    top: -180px;
+    z-index: -1;
+    right: -109px;
+  }
+}

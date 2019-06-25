@@ -1,0 +1,119 @@
+.live-sample__title,
+.live-sample__description,
+.live-sample__facts, {
+  .reset-list();
+}
+
+.live-sample__wrapper {
+  margin: 0 auto;
+  width: @mobile-width;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  padding: 17px 20px 0px 20px;
+}
+
+.live-sample__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  margin-bottom: 24px;
+}
+
+.live-sample__description {
+  color: #444444;
+font-family: "Arial MT", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+      margin-bottom: 24px;
+}
+
+.live-sample__costs {
+    text-align: center;
+    color: #111111;
+    font-family: Oswald;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 43px;
+}
+
+@media (min-width: @tablet-width) {
+  .live-sample__wrapper {
+    width: @tablet-container;
+    background-color: #fff;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .live-sample__facts,
+  .live-sample__costs {
+    display: inline-flex;
+  }
+  .live-sample__title {
+    font-family: Oswald;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    margin-bottom: 62px;
+  }
+
+  .live-sample__costs {
+    font-size: 20px;
+    line-height: 26px;
+    width: 180px;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    margin-top: 9px;
+    display: inline-block;
+  }
+  .live-sample__description {
+    color: #444444;
+    font-family: "Arial MT", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom:  54px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .live-sample {
+    height: auto;
+    margin-bottom: 55px;
+  }
+  .live-sample__wrapper {
+    width: @desktop-container;
+    flex-direction: column;
+  }
+  .live-sample__facts,
+  .live-sample__costs {
+    display: block;
+  }
+  .live-sample__description,
+  .live-sample__costs {
+    width: 470px;
+  }
+  .live-sample__costs {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .live-sample__title {
+    margin-bottom: 145px;
+  }
+
+  .live-sample__description {
+    width: 415px;
+    margin-bottom: 70px;
+  }
+
+  .live-sample__costs span {
+    margin-left: 58px;
+  }
+}
+

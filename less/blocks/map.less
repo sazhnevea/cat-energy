@@ -1,0 +1,26 @@
+.map {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  height: 360px;
+  width: @mobile-width;
+  margin-bottom: 36px;
+}
+
+.map__yandex {
+  border: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    margin-bottom: 0;
+    width: 768px;
+    height: 395px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    width: 1440px;
+  }
+}
