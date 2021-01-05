@@ -7,7 +7,7 @@
     "gulp-svgmin": "^2.2.0"
   },
   "devDependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "browser-sync": "^2.26.7",
     "del": "^4.1.1",
     "eslint": "^5.16.0",
